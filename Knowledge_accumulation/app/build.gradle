@@ -1,4 +1,7 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'realm-android'
+
 
 android {
     compileSdkVersion 24
@@ -26,4 +29,32 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:24.2.1'
     testCompile 'junit:junit:4.12'
+
+    compile 'me.yokeyword:fragmentation:0.7.10'
+    compile 'com.google.guava:guava:19.0'
+
+    compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+
+    compile 'de.greenrobot:eventbus:2.4.0'
+
+    compile 'org.simple:androideventbus:1.0.5.1'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.3.1'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'io.reactivex:rxjava:1.1.6'
+
+    compile 'com.tbruyelle.rxpermissions:rxpermissions:0.8.0@aar'
+    compile 'com.jakewharton.rxbinding:rxbinding:0.4.0'
+
+    apt 'com.zhy:mpermission-compiler:1.0.0'
+    compile 'com.zhy:mpermission-api:1.0.0'
+
+    compile 'com.orhanobut:logger:1.15'
+    compile 'org.slf4j:slf4j-api:1.7.12'
+
 }

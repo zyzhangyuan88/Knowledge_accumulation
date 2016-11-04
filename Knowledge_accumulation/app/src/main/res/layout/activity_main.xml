@@ -8,10 +8,15 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="study.hz.com.accumulation.MainActivity">
+    android:orientation="horizontal"
+    tools:context="study.hz.com.accumulation.ui.activities.MainActivity">
 
     <TextView
+        android:id="@+id/jump"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!" />
+
+
+
 </RelativeLayout>
